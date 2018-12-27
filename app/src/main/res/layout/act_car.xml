@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto1"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_1"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto1"
+                        android:layout_toRightOf="@+id/IDPhoto1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="车前照"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#F5F5F5" />
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto2"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_2"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto2"
+                        android:layout_toRightOf="@+id/IDPhoto2"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="车后照"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#F5F5F5" />
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto3"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_3"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto3"
+                        android:layout_toRightOf="@+id/IDPhoto3"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="车左照"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#F5F5F5" />
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto4"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_4"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto4"
+                        android:layout_toRightOf="@+id/IDPhoto4"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="车右照"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#F5F5F5" />
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto5"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_5"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto5"
+                        android:layout_toRightOf="@+id/IDPhoto5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="车牌照"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#F5F5F5" />
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto6"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_6"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto6"
+                        android:layout_toRightOf="@+id/IDPhoto6"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="车架照"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#F5F5F5" />
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto7"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_7"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto7"
+                        android:layout_toRightOf="@+id/IDPhoto7"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="公里数照片"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#F5F5F5" />
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto8"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_8"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto8"
+                        android:layout_toRightOf="@+id/IDPhoto8"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="驾驶证正面照"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#F5F5F5" />
+
+                <RelativeLayout
+                    android:id="@+id/rlIDPhoto9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/IDPhoto9"
+                        android:layout_width="103dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/car_8"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/IDPhoto9"
+                        android:layout_toRightOf="@+id/IDPhoto9"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="驾驶证反面照"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请按示意图进行拍照"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_login_more_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_corners_blue"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/app_bgcolor" >-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvNext"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="#3e94fd"-->
+            <!--android:gravity="center"-->
+            <!--android:text="下一步"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16sp" />-->
+
+    <!--</RelativeLayout>-->

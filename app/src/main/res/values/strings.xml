@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">盛和汽车金融</string>
+    <string name="home">首页</string>
+    <string name="user">我的</string>
+
+    <string name="check_network">请检查网络连接！</string>
+    <string name="member_register">会员注册</string>
+    <string name="sd_check_fail">未检测到存储设备，请插入SD卡！</string>
+    <string name="storageDevice">请插入存储设备，否则将无法读取图片</string>
+    <string name="exit_app">再按一次退出程序</string>
+    <string name="account_notice">手机号注册</string>
+    <string name="account_format_error">用户名格式错误</string>
+    <string name="password_different">两次输入的密码不一致</string>
+    <string name="reg_suceess">注册成功，请登录</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="login_account">用户名</string>
+    <string name="login_password">登录密码</string>
+    <string name="login_verification_code">短信验证码</string>
+    <string name="deal_password">交易密码</string>
+    <string name="code">验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="login_out">退出登录</string>
+    <string name="get_back_password">找回密码</string>
+    <string name="modify_password">修改密码</string>
+    <string name="post_touxiang">修改头像</string>
+    <string name="help">帮助</string>
+    <string name="loan_help">帮助说明</string>
+    <string name="verified_user">实名认证</string>
+    <string name="verified_zhushi">注：认证审核时间   早上9:00—12:00；\n\t\t下午12:30—18:00</string>
+    <string name="loan_zhushi">注：本次分期由通华小贷提供服务</string>
+    <string name="loan_zhushi2">注：分期服务由上海嘉定通华小额贷款有限公司提供</string>
+
+    <string name="setting">设置</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_us_tp1">，是一款白条消费的购物商城APP。操作简单方便，致力于为用户提供更好的产品以及更便捷的生活服务！未来的我们将更加努力！</string>
+    <string name="version">当前版本号：</string>
+    <string name="deleting">正在删除，请稍等...</string>
+    <string name="wait">请稍后...</string>
+    <string name="clean_cache_sucess">清除缓存成功</string>
+
+    <string name="dialog_title">提示</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+    <string name="choice_province">选择省</string>
+    <string name="choice_city">选择市</string>
+    <string name="choice_district">选择区县</string>
+    <string name="my_info">我的信息</string>
+    <string name="my_work_info">职位信息</string>
+    <string name="my_work_tp1">请提交您的详细工作信息，包括工作单位、所在岗位、办公电话、公司地址等</string>
+    <string name="my_operator_info">手机运营商</string>
+    <string name="my_operator_tp1">手机运营商认证需先上传您的通讯录，此信息用于查询个人征信，承若保护用户隐私</string>
+    <string name="my_operator_tp2">请确保此手机已实名登记</string>
+    <string name="my_operator_tp3">1、请谨慎输入，多次输错可能导致被锁
+        \n2、开始认证就不能中断，过程比较耗时，请耐心等待
+		\n3、移动用户，发送“MMCZ”至10086重置服务密码
+		\n4、联通用户，发送“MMCZ#6位新密码”至10010重置服务密码
+		\n5、电信用户，发送“MMCZ”至10001重置服务密码</string>
+    <string name="my_order_info">账单信息</string>
+    <string name="my_order_tp1">请提交借记卡网银帐号信息</string>
+    <string name="my_order_tp11">请提交信用卡网银帐号信息</string>
+    <string name="my_order_tp2">数据将加密传输，请放心填写</string>
+    <string name="my_order_tp3">网银帐号信息</string>
+
+    <string name="my_fund_info">住房公积金认证</string>
+    <string name="fund_city_list">选择城市</string>
+    <string name="fund_province_list">选择省</string>
+    <string name="my_fund_tp1">1、请谨慎输入，多次输错可能导致帐号被锁
+         \n2、开始认证就不能中断，过程比较耗时，请耐心等待
+         \n3、个人公积金查询初始密码为111111</string>
+
+    <string name="my_taobao_info">淘宝认证</string>
+    <string name="my_jingdong_info">京东认证</string>
+    <string name="my_huabei_info">支付宝认证</string>
+    <string name="my_huabei_tp1">请提交支付宝帐号信息</string>
+    <string name="my_huabei_tp2">注：审核期间请关闭支付宝刷脸功能,谢谢合作</string>
+    <string name="my_huabei_tp3">正在认证，大概需要2分钟，请耐心等待，不要离开这个页面</string>
+
+    <string name="phone_authen">手机运营商认证</string>
+    <string name="phone_authen_tp1">登录时间大约耗时2分钟\n认证过程时间较长，请耐心等待</string>
+
+    <string name="pay_method_alipay">支付宝支付</string>
+    <string name="pay_method_alipay2">推荐已开通支付宝支付的用户使用</string>
+    <string name="pay_method_wuka">无卡支付</string>
+    <string name="pay_method_wuka2">银行卡支付</string>
+    <string name="pay_method_wxpay">微信支付</string>
+    <string name="pay_method_choose_title">请选择支付方式</string>
+    <string name="credit_dai_fu">信用卡代还</string>
+    <string name="credit_dai_fu_pay">支付</string>
+    <string name="credit_dai_fu_order">代还记录</string>
+
+    <string name="recovery_notice1">1、山寨机、高仿机不回收</string>
+    <string name="recovery_notice2">2、屏幕锁未解, iCloud账户未注销不回收</string>
+    <string name="recovery_notice3">拒收并退回以上两种手机, 您需承担双向费用</string>
+    <string name="recovery_unlock1">Q:  iPhone如何取消开机密码</string>
+    <string name="recovery_unlock2">A:  设置 > Touch ID和密码 > 点击关闭密码</string>
+    <string name="recovery_unlock3">Q:  iPhone如何关闭iCloud</string>
+    <string name="recovery_unlock4">A:  设置 > 进入iCloud > 注销 > 从我的iPhone删除 > 输入密码 > 删除</string>
+    <string name="recovery_cue1">请您在邮寄手机前:</string>
+    <string name="recovery_cue2">1、备份通讯录、短信等重要数据</string>
+    <string name="recovery_cue3">2、解除屏锁密码锁、ID账号锁，并恢复出厂设置</string>
+    <string name="recovery_cue4">3、确保无SIM卡或TF卡遗留在手机中</string>
+
+    <string name="black_list_show">账户存在风险，暂时不能认证！</string>
+
+    <string name="loan_tp4">您是首次申请，为提高个人信用，需上传手机号，请选择亲属关系：</string>
+    <string name="late_fee_tp">提示：滞纳金计算请到“首页”的“费率查询”查看</string>
+    <string name="late_fee_tp2">增加或减免滞纳金</string>
+    <string name="extension_qr_code">我要推广</string>
+    <string name="my_commis">我的奖励金</string>
+    <string name="my_commis_tp1" formatted="false">1、分享当前页面给好友，好友下载草莓商城APP，并通过实名认证，即可获得100元红包
+\n2、好友成功下首单，确认收获后还可获得66元现金奖励
+\n3、现金红包可在“我的奖励金”查询，满50元即可提现，2个工作日到账，提现前请先实名并绑定银行卡</string>
+
+    <string name="loan_tp1">提示：
+\n1、每次借款至少100元且为100元的整数倍，最快20分钟到达您绑定的收款银行卡
+\n2、如已有借款，请先还完款后，才能再次借款
+</string>
+
+    <string name="vertify_access">验证通过,耗时%d毫秒</string>
+    <string name="vertify_failed">验证失败,还剩%d次机会</string>
+
+
+    <!-- 网络错误 -->
+    <string name="A1">努力加载中...</string>
+    <string name="A2">服务出错啦</string>
+    <string name="A3">请求超时啦</string>
+    <string name="A4">服务找不到啦(001)</string>
+    <string name="A5">服务连不上啦(002)</string>
+    <string name="A6">网络请求失败</string>
+    <string name="A7">网络不给力</string>
+
+    <!-- 登录，注册，修改密码，找回密码 -->
+    <string name="B1">请输入手机号码</string>
+    <string name="B2">手机号码格式不正确，请重新输入</string>
+    <string name="B21">电话或手机号码格式不正确，请重新输入</string>
+    <string name="B3">请输入密码，至少6位</string>
+    <string name="B4">请输入确认密码</string>
+    <string name="B5">密码与确认密码不一致，请重新输入</string>
+    <string name="B6">请输入旧密码</string>
+    <string name="B7">请输入新密码，至少6位</string>
+    <string name="B8">新密码不能和旧密码相同</string>
+    <string name="B9">请输入验证码</string>
+    <string name="B10">注册成功，请登录</string>
+    <string name="B11">修改成功，请登录</string>
+    <string name="B12">旧密码错误</string>
+    <string name="B13">用户未登录，请登录</string>
+
+    <!-- 实名认证 -->
+    <string name="C1">请输入真实姓名</string>
+    <string name="C2">真实姓名中有特殊符号，请去掉</string>
+    <string name="C3">请输入6位支付密码</string>
+    <string name="C4">请输入确认支付密码</string>
+    <string name="C5">两次密码不一致，请重新输入</string>
+    <string name="C6">请输入原密码</string>
+    <string name="C7">请输入新密码</string>
+    <string name="C8">请输入确认密码</string>
+    <string name="C9">请上传身份证正面照片</string>
+    <string name="C10">请上传身份证背面照片</string>
+    <string name="C11">请上传手持身份证照片</string>
+    <string name="C12">头像上传成功</string>
+    <string name="C13">头像上传失败，请重试</string>
+    <string name="C14">上传的图片文件格式有误，请重试</string>
+    <string name="C15">提交成功，正在审核中...</string>
+    <string name="C16">正在提交中</string>
+    <string name="C17">该信用卡已经认证成功</string>
+    <string name="C18">该信用卡还在认证中</string>
+    <string name="C19">该信用卡已经认证失败</string>
+    <string name="C20">请上传信用卡正面照片</string>
+    <string name="C21">请上传持卡人手持信用卡照片</string>
+    <string name="C22">认证照片未修改，请根据提示重新上传并提交</string>
+    <string name="C23">请上传借记卡正面照片</string>
+    <string name="C24">请上传借记卡反面照片</string>
+    <string name="C25">该借记卡已绑定</string>
+    <string name="H2">当前用户尚未实名认证，请先去实名认证</string>
+    <string name="H3">当前用户尚未通过银行卡认证，请先去认证</string>
+
+    <!-- 绑定银行卡 -->
+    <string name="F1">请先选择银行</string>
+    <string name="F2">请输入检索关键字</string>
+    <string name="F3">请输入正确银行卡卡号</string>
+    <string name="F4">请获取银行卡卡号</string>
+    <string name="F5">未登录用户无法绑定银行卡，是否登录？</string>
+    <string name="F6">银行卡绑定成功</string>
+    <string name="F7">未登录用户无法解除银行卡绑定，是否登录？</string>
+    <string name="F8">解除银行卡绑定成功</string>
+    <string name="F9">绑定超时，请重试</string>
+    <string name="F10">请选择开户支行</string>
+    <string name="F11">持卡人姓名为空，无法绑定银行卡</string>
+    <string name="F12">两次输入的卡号不一致，请重新输入</string>
+    <string name="my_bank_card">我的银行卡</string>
+    <string name="binding_bank_card">绑定银行卡</string>
+    <string name="bank_cards">银行卡片</string>
+    <string name="choice_bank">选择银行</string>
+    <string name="bank_choice">银行选择</string>
+    <string name="bank_branch_choice">银行网点选择</string>
+    <string name="choice_bank_branch">请输入支行或分行检索,如:鄞州支行</string>
+    <string name="bank_card_info">银行卡信息:</string>
+    <string name="bank_card_no">卡号:</string>
+    <string name="bank_card_password">密码:</string>
+
+    <string name="no_data">暂无数据</string>
+
+    <string name="zmxy_label">芝麻信用</string>
+    <string name="authen_info">认证资料</string>
+
+    <string name="manage">账户管理</string>
+    <string name="my_coupons">卡券包</string>
+    <string name="ranking_list">排行榜</string>
+    <string name="delivery_address">收货地址</string>
+    <string name="modify_address">收货地址管理</string>
+    <string name="i_phone">手机列表</string>
+    <string name="phone_details">商品详情</string>
+    <string name="news_list">消息列表</string>
+    <string name="user_info">用户中心</string>
+    <string name="choice_phone_type">选择手机型号</string>
+    <string name="phone_assess">手机评估</string>
+    <string name="assess_result">评估结果</string>
+    <string name="reclaim_order">回收订单</string>
+    <string name="logistics_info">物流信息</string>
+    <string name="recovery_rule">草莓商城回收协议</string>
+    <string name="express_list">快递列表</string>
+    <string name="promote_amount">提额记录</string>
+    <string name="register_rule">香蕉商城产品服务协议</string>
+    <string name="deal_rule">借款合同</string>
+    <string name="dai_kou_rule">委托扣款授权书</string>
+    <string name="credit_line">信用额度</string>
+    <string name="recommend">推荐有奖</string>
+    <string name="put_forward_record">提现记录</string>
+    <string name="more_old_phone">查看更多>></string>
+    <string name="order_true">下单</string>
+    <string name="order_repay">还款中心</string>
+    <string name="order_center">订单中心</string>
+    <string name="order_details">订单详情</string>
+    <string name="order_status">订单状态</string>
+    <string name="order_return">退货申请</string>call
+    <string name="order_pay_back">还款账单明细</string>
+    <string name="home_call">保险客服电话</string>
+
+
+    <string name="home_service">我的服务</string>
+    <string name="home_loan">贷款申请</string>
+    <string name="home_ce">车辆置换</string>
+    <string name="home_notice">新闻公告</string>
+    <string name="goods_order">购物订单</string>
+    <string name="bai_tiao_order">白条账单</string>
+    <string name="home_message">用户留言</string>
+    <string name="home_photo">上传图片</string>
+    <string name="home_info">信息登记</string>
+    <string name="home_company">分公司选择</string>
+    <string name="home_date">选择年份</string>
+    <string name="home_time">选择日期</string>
+    <string name="home_contact">紧急联系人</string>
+    <string name="message">信息</string>
+
+
+    <!-- 百度定位 -->
+    <string name="location_gps_off">为了您方便贷款,请在设置中开启定位服务</string>
+    <string name="location_net_error">网络异常，定位失败</string>
+    <string name="location_failure">gps定位失败</string>
+    <string name="location_gps_ing">gps定位中</string>
+    <string name="location_gps_invalid">所选城市尚未开通贷款功能</string>
+
+    <!-- 输入限制 -->
+    <string name="register_name_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="email_digits">.@0123456789abcdefghijklmnopqrstuvwxyz</string>
+    <string name="invitecode_digits">0123456789abcdefghijklmnopqrstuvwxyz</string>
+    <string name="invitecode_digits2">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="express_digits">0123456789ABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="id_cardno_digits">0123456789xX</string>
+    <string name="tel_digits">-0123456789</string>
+    <string name="Shu">|</string>
+
+    <string-array name="main_manager_server">
+        <item>二手车买卖</item>
+        <item>公司产品</item>
+    </string-array>
+
+    <string-array name="main_manager_more">
+        <item>用户留言</item>
+        <item>联系方式</item>
+    </string-array>
+
+    <string-array name="main_manager_menus">
+        <item>我的服务</item>
+        <item>贷款申请</item>
+        <item>车辆置换</item>
+        <item>车辆保险</item>
+        <item>新闻公告</item>
+    </string-array>
+
+    <!-- 滚动日期选择器-->
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+</resources>

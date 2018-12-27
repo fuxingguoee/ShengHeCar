@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rgpNavMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F5F5F5"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <RadioButton
+            android:id="@+id/rHome"
+            style="@style/main_radio_bottom"
+            android:drawableTop="@drawable/radio_home"
+            android:text="首页" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/flytTabContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rgpNavMenu"
+        android:background="#f1f1f1" >
+    </FrameLayout>
+
+</RelativeLayout>

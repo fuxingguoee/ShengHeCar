@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_logo" >
+
+        <ImageView
+            android:id="@+id/header_image_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/ic_back"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvActionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/order_center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rgpNavMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTitle"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbOrderBuy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="购物订单"
+            android:textColor="@drawable/selector_text"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbOrderRecovery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="回收订单"
+            android:textColor="@drawable/selector_text"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/llLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgpNavMenu"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvLine1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/text_red" />
+
+        <TextView
+            android:id="@+id/tvLine2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/line_d" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flytOrderContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llLine"
+        android:background="#f1f1f1" >
+    </FrameLayout>
+
+</RelativeLayout>

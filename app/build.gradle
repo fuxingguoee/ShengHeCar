@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+def AAVersion = '4.4.0'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.il360.shenghecar"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1006
+        versionName "1.6"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips", "arm64-v8a", "x86_64"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs', "src/main/jniLibs"]
+        }
+    }
+
+    dexOptions {
+        preDexLibraries = false
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    /*packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }*/
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
+    implementation project(':autoUpdate')
+    implementation project(':librarypull')
+    implementation project(':PushSDK')
+    implementation files('libs/alipaySDK-20150818.jar')
+    implementation files('libs/cos-sdk-android-1.4.2.jar')
+    implementation files('libs/fastjson-1.2.5.jar')
+    implementation files('libs/httpclient-android-4.3.5.jar')
+    implementation files('libs/locSDK_6.11.jar')
+    implementation files('libs/okhttp-3.2.0.jar')
+    implementation files('libs/okio-1.6.0.jar')
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation files('libs/SocialSDK_WeChat_Simplify.jar')
+    implementation files('libs/sun.misc.BASE64Decoder.jar')
+    implementation files('libs/umeng-analytics-7.5.1.jar')
+    implementation files('libs/umeng-common-1.5.1.jar')
+    implementation files('libs/umeng_shareboard_widget.jar')
+    implementation files('libs/umeng_social_api.jar')
+    implementation files('libs/umeng_social_net.jar')
+    implementation files('libs/umeng_social_shareboard.jar')
+    implementation files('libs/umeng_social_tool.jar')
+    implementation files('libs/universal-image-loader.jar')
+    implementation files('libs/zmxySDKALCmini_V1.01450366738902_release.jar')
+    compile(name: 'moxie-client-2.3.5', ext: 'aar')
+    compile(name: 'android_shujumohe_sdk_beta_20180131_1.2.4', ext: 'aar')
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000" >
+
+    <!-- pop的外围，点此pop消失 -->
+
+    <TextView
+        android:id="@+id/tv_periphery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <ImageView
+        android:id="@+id/ivShowCoupon"
+        android:layout_width="270dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/app_name"/>
+    
+<!--         <ImageView
+        android:id="@+id/ivShowCoupon"
+        android:layout_width="270dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_show_coupon" /> -->
+
+    <ImageView
+        android:id="@+id/ivGetCoupon"
+        android:layout_width="182dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/ivShowCoupon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_btn_get_coupon" />
+
+</RelativeLayout>

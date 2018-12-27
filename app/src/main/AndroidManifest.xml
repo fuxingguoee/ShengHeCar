@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.il360.shenghecar">
+
+    <!-- 强制更新权限  -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 腾迅cos -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 连连支付 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 有盾SDK所需权限声明 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- 百度定位 -->
+    <!--
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+         <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    -->
+
+
+    <!-- 友盟分享 -->
+    <!--
+             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!-- 魔蝎 -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+    <application
+        android:name=".common.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/global_bg"
+        tools:replace="android:icon, android:theme">
+
+        <!-- 7.0拍照相册问题 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!--
+            <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        &lt;!&ndash; meta-data需要写在application中 &ndash;&gt;
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="UZuPd08uqzFcGujrRQ33mmSZKBfBKooA" />
+        -->
+
+        <activity
+            android:name=".activity.WelcomeActivity_"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.main.MainActivity_"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.UrlToWebActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.main.TestActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.RegisterActivity_"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.LoginActivity_"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.user.GetBackPasswordActivity_"
+            android:label="@string/get_back_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.PasswordModifyActivity_"
+            android:label="@string/login_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.VerifiedActivity_"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/verified_user"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.VerifiedHelpActivity_"
+            android:label="@string/help"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.MyInfoActivity_"
+            android:label="@string/my_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.VerifiedFinishActivity_"
+            android:label="@string/verified_user"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.SettingActivity_"
+            android:label="@string/setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.AboutUsActivity_"
+            android:hardwareAccelerated="false"
+            android:label="@string/about_us"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.AccountPictureActivity_"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/post_touxiang"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.BindingBankCardActivity_"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/binding_bank_card"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.BankNameListActivity_"
+            android:label="@string/bank_choice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.BranchBankNameListActivity_"
+            android:label="@string/bank_branch_choice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.MyBankCardActivity_"
+            android:label="@string/my_bank_card"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.MyCommissionActivity_"
+            android:label="@string/my_commis"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.ManageActivity_"
+            android:label="@string/manage"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.DealPwdModifyActivity_"
+            android:label="@string/deal_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.DeliveryAddressActivity_"
+            android:label="@string/modify_address"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.AddressModifyActivity_"
+            android:label="@string/delivery_address"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.MyCreditLineActivity_"
+            android:label="@string/credit_line"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.RecommendActivity_"
+            android:label="@string/recommend"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.user.PutForwardRecordActivity_"
+            android:label="@string/put_forward_record"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.coupon.MyCouponsActivity_"
+            android:label="@string/my_coupons"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.coupon.RankListActivity_"
+            android:label="@string/ranking_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.goods.IPhoneActivity_"
+            android:label="@string/i_phone"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.goods.GoodsDetailsActivity_"
+            android:label="@string/phone_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.goods.NewsActivity_"
+            android:label="@string/news_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.goods.UserActivity_"
+            android:label="@string/user_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.PhoneTypesActivity_"
+            android:label="@string/choice_phone_type"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.PhoneAssessActivity_"
+            android:label="@string/phone_assess"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.AssessResultActivity_"
+            android:label="@string/assess_result"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.ReclaimOrderActivity_"
+            android:label="@string/reclaim_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.ReclaimTypeActivity_"
+            android:label="@string/reclaim_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.LogisticsInfoActivity_"
+            android:label="@string/logistics_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.RecoveryRuleActivity_"
+            android:label="@string/recovery_rule"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.ExpressListActivity_"
+            android:label="@string/express_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.recovery.PromoteAmountActivity_"
+            android:label="@string/promote_amount"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.PlaceOrderActivity_"
+            android:label="@string/order_true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.PlaceOrderActivity2_"
+            android:label="@string/order_true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.OrderCenterActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.DetailsBuyOrderActivity_"
+            android:label="@string/order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.DetailsRecoveryOrderActivity_"
+            android:label="@string/order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.OrderSatusActivity_"
+            android:label="@string/order_status"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.ReturnGoodsActivity_"
+            android:label="@string/order_return"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.PayBackActivity_"
+            android:label="@string/order_pay_back"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.NotPayBackActivity_"
+            android:label="@string/order_pay_back"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.DealRuleActivity_"
+            android:label="@string/deal_rule"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.DaiKouRuleActivity_"
+            android:label="@string/dai_kou_rule"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.GoodsOrderActivity_"
+            android:label="@string/goods_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.order.RepaymentActivity_"
+            android:label="@string/bai_tiao_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.address.ProvinceActivity_"
+            android:label="@string/choice_province"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.address.CityActivity_"
+            android:label="@string/choice_city"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.address.DistrictActivity_"
+            android:label="@string/choice_district"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.mydata.AutoVerifiedActivity_"
+            android:label="@string/verified_user"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.mydata.OperatorInfoActivity_"
+            android:label="@string/my_operator_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.mydata.OrderBankListActivity_"
+            android:label="@string/choice_bank"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.mydata.HuaBeiActivity_"
+            android:label="@string/my_huabei_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.mydata.JingDongActivity_"
+            android:label="@string/my_jingdong_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.mydata.TaoBaoActivity_"
+            android:label="@string/my_taobao_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.mydata.ZhiMaCreaditActivity_"
+            android:label="@string/zmxy_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.mydata.AuthenActivity_"
+            android:label="@string/authen_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.FundProvinceActivity_"
+            android:label="@string/fund_province_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.FundCityActivity_"
+            android:label="@string/fund_city_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.FundAuthenActivity_"
+            android:label="@string/my_fund_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.PhoneAuthenActivity_"
+            android:label="@string/phone_authen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.HelpActivity_"
+            android:label="@string/loan_help"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.SignNameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.home.CallActivity_"
+            android:label="@string/home_call"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.CarActivity_"
+            android:label="上传图片"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.ServiceActivity_"
+            android:label="@string/home_service"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.LoanActivity_"
+            android:label="@string/home_loan"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.CeActivity_"
+            android:label="@string/home_ce"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.NoticeActivity_"
+            android:label="@string/home_notice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.MessageActivity_"
+            android:label="@string/home_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.Message2Activity_"
+            android:label="@string/home_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.PhotoActivity_"
+            android:label="@string/home_photo"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.PaActivity_"
+            android:label="@string/home"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.InfoActivity_"
+            android:label="@string/home_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.MyInfoActivity_"
+            android:label="信息"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.CompanyActivity_"
+            android:label="分公司选择"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".activity.home.TimeActivity_"
+            android:label="@string/home_date"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Li"/>
+
+        <!--匹配主题使用AppCompat并继承AppCompatActivity-->
+        <!-- qq分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106698792" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 生产环境友盟 -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b6145e8f43e487e7a000343" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="umeng" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="1a0f1ee271c27b8d28daaa89844d5502" />
+
+        <activity
+            android:name=".activity.home.PayActivity_"
+            android:exported="true"
+            android:label="@string/credit_dai_fu_pay"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxf267cc65fb7d67c7" />
+            </intent-filter>
+        </activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- alipay sdk end -->
+
+        <activity
+            android:name=".alipay.AliPayActivity_"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name=".alipay.PaySuccessActivity_"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+
+        <!-- 芝麻信用 -->
+
+        <activity
+            android:name="com.android.moblie.zmxy.antgroup.creditsdk.app.SDKActivity"
+            android:label="@string/zmxy_label"
+            android:screenOrientation="portrait" />
+
+        <!-- 魔蝎 -->
+        <activity android:name="com.moxie.client.MainActivity" />
+
+        <!-- 魔蝎芝麻分 -->
+        <activity
+            android:name="com.moxie.client.accessible.AccessibleCrawlerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name="com.moxie.client.accessible.AccessibleCrawlerService"
+            android:accessibilityFlags="flagReportViewIds"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessible_crawler_config" />
+        </service>
+
+        <!-- 强制更新 -->
+        <service android:name="com.ydtong.autoupdate.AuDownloadService" />
+
+        <meta-data
+            android:name="AU_APPKEY"
+            android:value="shenghecar_android" />
+        <meta-data
+            android:name="AU_CHANNEL"
+            android:value="web" />
+
+    </application>
+
+</manifest>
